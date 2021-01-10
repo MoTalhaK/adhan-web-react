@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './components/header-comp';
+import MainBody from './components/prayer-comp';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            city: undefined,
+            country: undefined,
+            date: undefined,
+            prayerTimeFajr: undefined,
+            prayerTimeDhuhr: undefined,
+            prayerTimeAsr: undefined,
+            prayerTimeMaghrib: undefined,
+            prayerTimeIshaa: undefined,
+            sunrise: undefined
+        };
+    }
+
+    componentDidMount() {
+
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <Header/>
+                <MainBody/>
+                {/*<Calendar/>*/}
+            </div>
+        );
+    }
 }
 
 export default App;

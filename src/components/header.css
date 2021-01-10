@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background: #d8c3a5;
+}
+
+header div .timer {
+    flex-direction: column;
+    margin-right: initial;
+    width: auto;
+}
+
+header div #main-title {
+    width: auto;
+    float: left;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    width: 1140px;
+    margin: 0 auto;
+}
